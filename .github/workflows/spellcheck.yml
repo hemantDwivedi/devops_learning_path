@@ -1,0 +1,19 @@
+name: Check Spelling
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Spelling
+        uses: check-spelling/check-spelling@v0.0.22
+        with:
+          files: "**/*.java"
