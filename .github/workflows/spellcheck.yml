@@ -13,5 +13,3 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: rojopolis/spellcheck-github-actions@v0
-        with:
-          files: "**/*.java"
