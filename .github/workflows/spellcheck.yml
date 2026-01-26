@@ -15,3 +15,4 @@ jobs:
       - uses: rojopolis/spellcheck-github-actions@v0
         with:
           source_files: README.md
+          task_name: MarkDown
